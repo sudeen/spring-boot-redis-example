@@ -25,3 +25,6 @@ nbdist/
 mvnw
 mvnw.cmd
 .mvn
+.gitignore
+src/main/resources/static/
+src/main/resources/templates/

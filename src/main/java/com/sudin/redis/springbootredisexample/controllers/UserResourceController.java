@@ -40,4 +40,10 @@ public class UserResourceController {
         return userRepository.findAll();
     }
 
+    @GetMapping("/delete/{id}")
+    public Map<String, User> delete(@PathVariable("id") final String id) {
+        userRepository.delete(id);
+        return all();
+    }
+
 }
